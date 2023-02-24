@@ -1,0 +1,129 @@
+//evaluacion_1
+#include <stdio.h>
+int main() {
+    char nombre[50];
+    int edad;
+    char ciudad[50];
+    int puntaje = 0;
+    printf("1.¿Eres una persona madrugadora o noctámbula?\n");
+    printf("A. Madrugadora\n");
+    printf("B. Noctámbula\n");
+    char respuesta1;
+    scanf(" %c", &respuesta1);
+    if (respuesta1 == 'B' || respuesta1 == 'b') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+printf("2.¿Qué es lo que más valoras en una amistad?\n");
+    printf("A. Integridad\n");
+    printf("B. Humor\n");
+    char respuesta2;
+    scanf(" %c", &respuesta2);
+    if (respuesta2 == 'A' || respuesta2 == 'a') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+    printf("3.¿Qué preferirías…?\n");
+    printf("A. Cita debe ser divertida\n");
+    printf("B. Cita debe ser romantica\n");
+    char respuesta3;
+    scanf(" %c", &respuesta3);
+    if (respuesta3 == 'B' || respuesta3 == 'b') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+    printf("4.¿Qué sueles hacer los fines de semana?\n");
+    printf("A. Leer en la cama \n");
+    printf("B. Club bebiendo con amigos\n");
+    char respuesta4;
+    scanf(" %c", &respuesta4);
+    if (respuesta4 == 'A' || respuesta4 == 'a') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+    printf("5.¿Qué significa la amistad para ti?\n");
+    printf("A. Compañerismo \n");
+    printf("B. Respeto\n");
+    char respuesta5;
+    scanf(" %c", &respuesta5);
+    if (respuesta5 == 'B' || respuesta5 == 'b') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+    printf("6.¿Qué importancia tiene el amor y el afecto en tu vida?\n");
+    printf("A. Mucho \n");
+    printf("B. Poco\n");
+    char respuesta6;
+    scanf(" %c", &respuesta6);
+    if (respuesta6 == 'A' || respuesta6 == 'a') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+    printf("7.¿Cómo te sientes respecto a la relación que te une a tu madre?\n");
+    printf("A. Mala\n");
+    printf("B. Buena\n");
+    char respuesta7;
+    scanf(" %c", &respuesta7);
+    if (respuesta7 == 'B' || respuesta7 == 'b') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+    printf("8.¿Cuándo fue la última vez que lloraste delante de alguien? \n");
+    printf("A. Hace mucho tiempo\n");
+    printf("B. Hace poco tiempo\n");
+    char respuesta8;
+    scanf(" %c", &respuesta8);
+    if (respuesta8 == 'B' || respuesta8 == 'b') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+    printf("9.¿Qué importancia tiene la fidelidad de una persona? \n");
+    printf("A. Poca\n");
+    printf("B. Mucha\n");
+    char respuesta9;
+    scanf(" %c", &respuesta9);
+    if (respuesta9 == 'A' || respuesta9 == 'a') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+    }
+ printf("10.¿Qué tipo de clima te gusta? \n");
+    printf("A. Frío\n");
+    printf("B. Caliente\n");
+    char respuesta10;
+    scanf(" %c", &respuesta10);
+    if (respuesta10 == 'A' || respuesta10 == 'a') {
+        printf("¡Correcto!\n");
+        puntaje++;
+    } else {
+        printf("Respuesta incorrecta.\n");
+}
+float porcentaje_correcto = (float)puntaje / 2.0 * 100.0;
+
+    
+    if (porcentaje_correcto >= 70.0) {
+        printf("¡Felicidades, %s! Buen prospecto.\n", nombre);
+    } else {
+        printf("Lo siento, %s,  No es un buen prospecto. 70%%.\n", nombre);
+    }
+
+    return 0;
+}
+
