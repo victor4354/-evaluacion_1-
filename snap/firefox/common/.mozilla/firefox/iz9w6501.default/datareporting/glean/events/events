@@ -1,0 +1,16 @@
+{"timestamp":360027,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","feature":"nimbus-qa-1","experiment":"nimbus-pref-qa-1-2week-experiment"}}
+{"timestamp":360028,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"nimbus-qa-1","experiment":"nimbus-pref-qa-1-2week-rollout","reason":"invalid-feature"}}
+{"timestamp":360028,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"nimbus-pref-qa-1-4week-experiment","feature":"nimbus-qa-1","reason":"invalid-feature"}}
+{"timestamp":360028,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"nimbus-pref-qa-1-4week-rollout","reason":"invalid-feature","feature":"nimbus-qa-1"}}
+{"timestamp":360028,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"nimbus-pref-qa-2-2week-experiment","reason":"invalid-feature","feature":"nimbus-qa-2"}}
+{"timestamp":360028,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","experiment":"nimbus-pref-qa-2-2week-rollout","feature":"nimbus-qa-2"}}
+{"timestamp":360028,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","experiment":"nimbus-pref-qa-2-4week-experiment","feature":"nimbus-qa-2"}}
+{"timestamp":360028,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"nimbus-qa-2","experiment":"nimbus-pref-qa-2-4week-rollout","reason":"invalid-feature"}}
+{"timestamp":368836,"category":"perf","name":"page_load","extra":{"js_exec_time":"922","load_type":"NORMAL","response_time":"378","fcp_time":"804","load_time":"2611"}}
+{"timestamp":375301,"category":"perf","name":"page_load","extra":{"load_time":"836","js_exec_time":"102","fcp_time":"394","response_time":"214","load_type":"LINK"}}
+{"timestamp":414174,"category":"perf","name":"page_load","extra":{"response_time":"800","js_exec_time":"1998","fcp_time":"2115","load_type":"STOP","load_time":"36053"}}
+{"timestamp":986011,"category":"nimbus_events","name":"enrollment","extra":{"branch":"control","experiment_type":"rollout","experiment":"import-infrequent-rollout-make-yourself-at-home","enrollment_id":"b6adfe81-fc8a-4dcc-a305-055bd8921bb6"}}
+{"timestamp":986050,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","feature":"nimbus-qa-1","experiment":"nimbus-pref-qa-1-4week-experiment"}}
+{"timestamp":986050,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"invalid-feature","feature":"nimbus-qa-1","experiment":"nimbus-pref-qa-1-4week-rollout"}}
+{"timestamp":986050,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"nimbus-pref-qa-2-4week-experiment","feature":"nimbus-qa-2","reason":"invalid-feature"}}
+{"timestamp":986051,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"nimbus-qa-2","reason":"invalid-feature","experiment":"nimbus-pref-qa-2-4week-rollout"}}

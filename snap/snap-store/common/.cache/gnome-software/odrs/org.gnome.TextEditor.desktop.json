@@ -1,0 +1,20 @@
+[
+    {
+        "app_id": "org.gnome.TextEditor.desktop",
+        "date_created": 1656735953.0,
+        "description": "no recomendado se cierra solo",
+        "distro": "Fedora Linux",
+        "karma_down": 0,
+        "karma_up": 0,
+        "locale": "es_CL.UTF-8",
+        "rating": 20,
+        "reported": 0,
+        "review_id": 499786,
+        "score": 0,
+        "summary": "no recomendado se cierra solo",
+        "user_display": "JonatitoM",
+        "user_hash": "f094a43913bc3d80ec120064e0c7ed003a2f86ed",
+        "user_skey": "bdeecc3b02a36eeb9b5addd3905b0eca659b4cfc",
+        "version": "42.2"
+    }
+]

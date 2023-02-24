@@ -1,0 +1,38 @@
+[
+    {
+        "app_id": "org.gnome.Terminal.desktopc",
+        "date_created": 1665538722.0,
+        "description": "https://www.microsoft.com/es-es/edge\n\nsudo apt-get install android-file-transfer",
+        "distro": "Ubuntu",
+        "karma_down": 0,
+        "karma_up": 0,
+        "locale": "es_US.UTF-8",
+        "rating": 100,
+        "reported": 0,
+        "review_id": 527899,
+        "score": 51,
+        "summary": "soy de colombia GRACIAS se\u00f1or linux",
+        "user_display": "pruebaFINAL",
+        "user_hash": "25c625493cb58e8470f0f12862a49729c6f02244",
+        "user_skey": "a3839afc61d196356925ac3bea6fb17e558703d0",
+        "version": "unknown"
+    },
+    {
+        "app_id": "org.gnome.Terminal.desktopc",
+        "date_created": 1626319618.0,
+        "description": "very good thanks",
+        "distro": "Fedora",
+        "karma_down": 1,
+        "karma_up": 1,
+        "locale": "es_PY.UTF-8",
+        "rating": 100,
+        "reported": 1,
+        "review_id": 399196,
+        "score": 0,
+        "summary": "ok!",
+        "user_display": "josen",
+        "user_hash": "8e2f4faae9770b3922393122fcb531ab0905b060",
+        "user_skey": "a3839afc61d196356925ac3bea6fb17e558703d0",
+        "version": "unknown"
+    }
+]
