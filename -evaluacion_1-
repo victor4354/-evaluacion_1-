@@ -127,3 +127,81 @@ float porcentaje_correcto = (float)puntaje / 2.0 * 100.0;
     return 0;
 }
 
+
+//Programa para tablas de multiplicar.
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    for (i = 1; i <= 10; i++) {
+        printf("Tabla del %d\n", i);
+        for (j = 1; j <= 10; j++) {
+            printf("%d x %d = %d\n", i, j, i*j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+//Programa para imprimir árboles de navidad.
+#include <stdio.h>
+
+int main() {
+    int altura, i, j, k, l;
+
+    printf("Ingresa el tamaño del árbol: ");
+    scanf("%d", &altura);
+
+    for (i = 1; i <= altura; i++) {
+        for (j = 1; j <= altura - i; j++) {
+            printf(" ");
+        }
+        for (k = 1; k <= i * 2 - 1; k++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for (l = 1; l <= altura - 1; l++) {
+        printf(" ");
+    }
+    printf("*\n");
+    return 0;
+}
+
+
+
+//Programa para imprimir números primos.
+#include <stdio.h>
+
+int main()
+{
+   int i, j, es_primo;
+
+   printf("Secuencia de numeros primos del 1 al 50:\n");
+
+   for(i=2; i<=50; i++)
+   {
+      es_primo = 1;
+
+      for(j=2; j<i; j++)
+      {
+         if(i%j == 0)
+         {
+            es_primo = 0;
+            break;
+         }
+      }
+
+      if(es_primo == 1)
+      {
+         printf("%d ", i);
+      }
+   }
+
+   return 0;
+}
+
+
+
