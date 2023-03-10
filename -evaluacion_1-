@@ -203,5 +203,333 @@ int main()
    return 0;
 }
 
+Laboratorio_4.py
+
+//Programa para suma de números pares. 
+def suma(a, b):
+    if a % 2 == 0 and b % 2 == 0:
+        print(f"La suma de {a} y {b} es {a+b}")
+    else:
+        print("Ambos valores deben ser pares para poder sumarlos")
+
+
+//Programa para resta de números múltiplos de 5.
+def resta(a, b):
+    if a % 5 == 0 and b % 5 == 0:
+        print(f"La resta de {a} y {b} es {a-b}")
+    else:
+        print("Ambos valores deben ser múltiplos de 5 para poder restarlos")
+//Programa para la división.
+def division(a, b):
+    if a % b == 0:
+        print(f"La división de {a} y {b} es {a/b}")
+    else:
+        print("La división no es exacta")
+
+//Programa para la multiplicación.
+def multiplicacion(a, b):
+    if a > 10 and b > 10:
+        print(f"La multiplicación de {a} y {b} es {a*b}")
+    else:
+        print("Los valores no son mayores a 10")
+
+1. ¿Qué es lo que hace el código en un comentario antes de modificarlo?
+Es una implementación básica de un menú en Python,este menú funciona por medio de opciones,si la opción es correcta funcionará el programa y si la opción es incorrecta mandarán un mensaje de error del programa.
+
+2. ¿Cuál es la sintaxis de un while?
+while condicion:
+3. ¿Exite swhitch en python?No existe swhitch en python.
+4. ¿Qué es un elif?Es un comando que nos permite poner condiciones o puede ser utilizado para evaluar condiciones.
+5. ¿Qué función de se ejecuta al correr el script?La función main()
+
+#Programa modificado
+import os
+
+def printMenu():
+    ''' printMenu
+    Author: <nombre del autor>
+    Date: <fecha>
+    Description: Descripción de los tipos de datos en python
+    [Param: [nombre] [tipo] ]
+    '''
+    os.system('cls')
+    print("Menú para la selección de una opción \n\n")
+    print("\t1) Suma\n")
+    print("\t2) Resta\n")
+    print("\t3) Multiplicación\n")
+    print("\t4) División\n")
+    print("\t5) Salir\n")
+    option = input()
+    if(option):
+        return int(option)
+    else:
+        return 0
+
+
+def suma():
+    ''' Función que realiza la suma de dos números '''
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    print(f"{a} + {b} = {a + b}")
+
+
+def resta():
+    ''' Función que realiza la resta de dos números '''
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    print(f"{a} - {b} = {a - b}")
+
+
+def multiplicacion():
+    ''' Función que realiza la multiplicación de dos números '''
+    a = float(input("Ingresa el primer número: "))
+    b = float(input("Ingresa el segundo número: "))
+    print(f"{a} * {b} = {a * b}")
+
+
+def division():
+    ''' Función que realiza la división de dos números '''
+    a = float(input("Ingresa el dividendo: "))
+    b = float(input("Ingresa el divisor: "))
+    if b == 0:
+        print("Error: No se puede dividir entre cero")
+    else:
+        print(f"{a} / {b} = {a / b}")
+
+
+def main():
+    flag = 0
+    while(flag != 5):
+        flag = printMenu()
+        
+        if flag == 1:
+            suma()
+        elif flag == 2:
+            resta()
+        elif flag == 3:
+            multiplicacion()
+        elif flag == 4:
+            division()
+        elif flag == 5:
+            print("\nHasta luego!")
+        else:
+            print("\nOpción no válida")
+
+        print("\nPresiona Enter para continuar ")
+        input()
+
+if __name__ == "__main__":
+    main()
+
+
+LABORATORIO  _4.c
+
+
+//Programa para suma de números pares. 
+#include <stdio.h>
+
+void suma(int a, int b){
+    if (a % 2 == 0 && b % 2 == 0){
+        printf("La suma de %d y %d es %d\n", a, b, a + b);
+    }
+    else{
+        printf("Los números no son pares\n");
+    }
+}
+
+int main(){
+    suma(2, 4);   
+    suma(5, 7);   
+    
+    return 0;
+}
+
+//Programa para resta de números múltiplos de 5.
+#include <stdio.h>
+
+void resta(int a, int b){
+    if (a % 5 == 0 && b % 5 == 0){
+        printf("La resta de %d y %d es %d\n", a, b, a - b);
+    }
+    else{
+        printf("Los números no son impares. \n");
+    }
+}
+
+int main(){
+    resta(20, 10);   // Salida esperada: La resta de 20 y 10 es 10
+    resta(11, 2);    // Salida esperada: Los números no son múltiplos de 5
+    
+    return 0;
+}
+
+
+
+
+//Programa para la división.
+#include <stdio.h>
+
+void division(int a, int b){
+    if (a % b == 0){
+        printf("La división de %d y %d es %d\n", a, b, a / b);
+    }
+    else{
+        printf("No es una división exacta\n");
+    }
+}
+
+int main(){
+    division(10, 2);   // Salida esperada: La división de 10 y 2 es 5
+    division(5, 3);    // Salida esperada: No es una división exacta
+    
+    return 0;
+}
+
+//Programa para la multiplicación.
+#include <stdio.h>
+
+void multiplicacion(int a, int b){
+    if (a > 10 && b > 10){
+        printf("La multiplicación de %d y %d es %d\n", a, b, a * b);
+    }
+    else{
+        printf("Los números no son mayores a 10\n");
+    }
+}
+
+int main(){
+    multiplicacion(20, 11);   
+    multiplicacion(3, 1);     
+    return 0;
+}
+
+1. ¿Qué es lo que hace el código en un comentario antes de modificarlo?
+Este código,implementa menú simple en C,este menú funciona por medio de opciones,si la opción es correcta funcionará el programa y si la opción es incorrecta mandaron un mensaje de error del programa.
+2. ¿Para qué sirve la función fflush?Se utiliza para vaciar el buffer(espacio de memoria) de salida de un archivo o dispositivo.
+3. ¿Cuál es la sintaxis de un while?while (condición) {
+   
+}
+
+4. ¿Cuál es la sintaxis de un switch?
+switch (expresion) {
+    case valor1:
+             break;
+    case valor2:
+        break;
+    case valor3:
+        break;
+    // otros casos
+    default
+        break;
+}
+
+
+//Progama modificado.
+#include <stdio.h>
+#include <stdlib.h>
+
+void suma(int a, int b) {
+    if(a % 2 == 0 && b % 2 == 0) {
+        printf("La suma de %d y %d es %d\n", a, b, a + b);
+    } else {
+        printf("Los números no son pares\n");
+    }
+}
+
+void resta(int a, int b) {
+    if(a % 5 == 0 && b % 5 == 0) {
+        printf("La resta de %d y %d es %d\n", a, b, a - b);
+    } else {
+        printf("Los números no son múltiplos de 5\n");
+    }
+}
+
+void multiplicacion(int a, int b) {
+    if(a > 10 && b > 10) {
+        printf("La multiplicación de %d y %d es %d\n", a, b, a * b);
+    } else {
+        printf("Los números no son mayores a 10\n");
+    }
+}
+
+void division(int a, int b) {
+    if(a % b == 0) {
+        printf("La división de %d y %d es %d\n", a, b, a / b);
+    } else {
+        printf("La división no es exacta\n");
+    }
+}
+
+int printMenu(){
+    int option;
+    system("clear");
+    fflush( stdin );
+    printf("Bienvenido al men%c seleccione una opci%cn \n\n",163,162);
+    printf("\t1) Suma\n"); 
+    printf("\t2) Resta\n"); 
+    printf("\t3) Multiplicación\n"); 
+    printf("\t4) División\n");
+    printf("\t5) Salir\n");
+    printf("\t6) Volver al menú principal\n"); 
+    scanf("%d",&option);
+    if(option)
+        return option;
+    else
+        return 0;
+}
+int main(){
+    char inutil;
+    int flag = 0;
+    int volver_menu = 0;
+    while(flag!=5){
+            if (volver_menu) {
+            printf("Presione enter para volver al menú principal...");
+            fflush( stdin );
+            scanf("%c",&inutil);
+            volver_menu = 0;
+        }
+        flag = printMenu();
+        switch (flag){
+            case 1:
+                printf("Ingrese dos números enteros separados por un espacio: ");
+                int a, b;
+                scanf("%d %d", &a, &b);
+                suma(a, b);
+                break;
+            
+            case 2:
+                printf("Ingrese dos números enteros separados por un espacio: ");
+                scanf("%d %d", &a, &b);
+                resta(a, b);
+                break;
+            
+            case 3:
+                printf("Ingrese dos números enteros separados por un espacio: ");
+                scanf("%d %d", &a, &b);
+                multiplicacion(a, b);
+                break;
+            
+            case 4:
+                printf("Ingrese dos números enteros separados por un espacio: ");
+                scanf("%d %d", &a, &b);
+                division(a, b);
+                break;
+            
+            case 5:
+                printf("Saliendo...\n");
+                break;
+                
+            default:
+                printf("\nOpción no válida");
+                break;
+        }
+        printf("\nPresione enter para continuar...");
+        fflush( stdin );
+        scanf("%c",&inutil);
+    }
+    printf("Excelente");
+    return 0;
+}
+
 
 
